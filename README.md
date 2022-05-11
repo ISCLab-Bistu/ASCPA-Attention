@@ -1,3 +1,15 @@
+<style>
+img
+{
+    display:block; 
+    float:none; 
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+}
+</style>
+
+
 # ASCPA-Attention
 
 
@@ -5,9 +17,8 @@
 
 This repository contains the official implementation of **Adaptive Spatial Correlation Pyramid Attention Network for Detecting Outfalls into Rivers and Oceans in Aerial Images**.
 
+![](Image/ASCPA.jpg)
 
-
-![](Image/ASCPA.jpg#pic_center)
 <p align = "center">
 Adaptive Spatial Correlation Pyramid Attention (ASCPA). 
 </p>
@@ -17,7 +28,7 @@ Strengthening the inspection of outfalls into rivers and oceans can help monitor
 
 ## Result
 
-![](Image/vis.jpg#pic_center)
+![vis](Image/vis.jpg)
 <p align = "center">
 Visualization results based on Gradcam. 
 </p>
