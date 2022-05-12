@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This repository contains the official implementation of **Adaptive Spatial Correlation Pyramid Attention Network for Detecting Outfalls into Rivers and Oceans in Aerial Images**.
+This repository contains the official implementation of **Adaptive Spatial Correlation Pyramid Attention Network for Detecting Outfalls into Rivers and Oceans in Aerial Images**. The purpose of our work is to propose an intelligent system, which assists inspectors in completing the task of detecting and locating regions of outfalls in aerial images well. To enchance the detection performance for outfalls, the proposed ASCPA as a novel attention module to be fused into the YOLOv5s architecture. Its purpose is to construct multi-scale spatial correlations and explore intra-regional associations of feature maps. Therefore, it is able to better capture contextual information and long-range dependencies in aerial images, so as to improve the performance of the YOLOv5s architecture in completing the outfall detection task. This work was completed by Intelligent Sensing and Computing Laboratory affiliated to Beijing Information Science and Technology University. It has been submitted to the Journal of Engineering Applications of Artificial Intelligence published by Elsevier.
 
 <p align="center">
   <img src="https://github.com/ISCLab-Bistu/ASCPA-Attention/blob/main/Image/ASCPA.jpg" />
@@ -13,7 +13,7 @@ This repository contains the official implementation of **Adaptive Spatial Corre
 Adaptive Spatial Correlation Pyramid Attention (ASCPA). 
 </p>
 
-Strengthening the inspection of outfalls into rivers and oceans can help monitor pollutant emissions to the natural environment. Unmanned aerial vehicle (UAV) with high spatial resolution imagery has become a more efficient method for outfall surveys. At present, outfalls retrieval from UAV images relies on visual interpretation by skilled experts. However, long periods of concentration on detecting outfalls in high-resolution images for an expert easily increase mental load and stress, resulting in missing and false detection. Therefore, we develop a deep learning model (YOLOv5-ASCPA) based on You Only One Look 5th Version (YOLOv5) to perform outfalls detection in aerial images. In this model, an adaptive spatial correlation pyramid attention (ASCPA) network is proposed to establish long-distance region-to-region relationships between the outfall and its surrounding information more effectively. The proposed ASCPA network can be regarded as a module embedded into YOLOv5s architecture (Called YOLOv5-ASCPA). This network is mainly composed of SPE (Spatial Pyramid Extractor) and SCFM (Spatial Correlation Fusion Module). The purpose of the SPE is to extract multi-scale spatial information on the feature map. The SCFM is used to perform spatial correlation feature recalibration to selectively emphasized informative features. Experimental results demonstrate that the proposed network improves the performance of YOLOv5s in detecting outfalls by increasing Recall and AP0.5 from 86.5% to 89.1% and 83.1% to 86.5%, respectively. To show the superiority of the ASCPA network, we compared our results with other attention mechanisms and classic object detection models, all of them show that the ASCPA network has a competitive performance for outfalls detection. Moreover, based on visualization analysis, the ASCPA network is able to pay more attention on true outfall objects with respect to other attention mechanisms. These promising results demonstrate that the deep learning algorithm can be a feasible solution to assist experts in detecting outfalls with UAV imagery. 
+The structure of the ASCPA network is shown in above picture. This network is mainly composed of SPE (Spatial Pyramid Extractor) and SCFM (Spatial Correlation Fusion Module). The purpose of the SPE is to extract multi-scale spatial information on the feature map. The SCFM is used to perform spatial correlation feature recalibration to selectively emphasized informative features. 
 
 
 ## Result
@@ -23,7 +23,7 @@ Strengthening the inspection of outfalls into rivers and oceans can help monitor
 </p>
 
 <p align = "center">
-Visualization results based on Gradcam. 
+Visualization results are shown in above picture using Gradcam tool. Obviously, the heat map of YOLOv5-ASCPA is completely able to cover the core area of the outfall which reflects higher response intensity with dark red. The error-prone region has a very weak response intensity for the YOLOv5-ASCPA model compared with the other three models.
 </p>
 
 ## Usage
