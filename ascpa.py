@@ -26,7 +26,6 @@ class ASCPA(nn.Module):
 
     def forward(self, x):
         g_x = self.g(x)
-
         W_y = self.af(g_x, x, self.down1, self.down2)
         z = self.W(W_y)
         if self.add:
